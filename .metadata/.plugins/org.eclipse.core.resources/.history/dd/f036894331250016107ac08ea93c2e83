@@ -1,0 +1,17 @@
+package tda;
+
+public interface TDATurnos {
+	
+	/** String con formato YYYYMMDD */
+	public void procfecha(int dia, int mes, int anio, String valor);
+
+	/** String con formato YYYYMMDD */
+	public int mes(String valor);
+
+	/** String con formato YYYYMMDD */
+	public int dia(String valor);
+
+	/** String con formato YYYYMMDD */
+	public int anio(String valor);
+
+}

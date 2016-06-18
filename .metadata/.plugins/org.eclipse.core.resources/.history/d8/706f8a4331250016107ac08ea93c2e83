@@ -1,0 +1,47 @@
+package implementacion;
+
+import tda.ABBTDATurnos;
+import implementacion.Turnos;
+
+public class ABBTurnos implements ABBTDATurnos {
+
+	NodoABB raiz;
+	int dia,mes,anio;
+	
+	public void inicializar(){
+		raiz = null;
+	}
+	public void agregar(String paciente, String turno){
+		if (raiz == null) {
+			raiz = new NodoABB();
+			raiz.paciente = paciente;
+			raiz.turno = turno;
+			raiz.hijoI = new ABBTurnos();
+			raiz.hijoI. inicializar();
+			raiz.hijoD = new ABBTurnos();
+			raiz.hijoD.inicializar();
+		}
+		else {
+			procfecha(dia, mes, anio,raiz.turno);
+			dia = dia(raiz.turno);
+		}
+	}
+	public void eliminar(String paciente){
+		
+	}
+	public String paciente(){
+		return raiz.paciente;
+	}
+	public String turno(){
+		return raiz.turno;
+	}
+	public ABBTDATurnos hijoIzquierdo(){
+		return raiz.hijoI;
+	}
+	public ABBTDATurnos hijoDerecho(){
+		return raiz.hijoD;
+	}
+	public boolean arbolVacio(){
+		return (raiz == null);
+	}
+}

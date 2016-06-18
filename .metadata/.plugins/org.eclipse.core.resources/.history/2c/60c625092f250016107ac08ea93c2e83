@@ -1,0 +1,21 @@
+package implementacion;
+
+import tda.TDATurnos;
+
+public class Turnos implements TDATurnos {
+
+	public int mes(String valor) {
+		for(i=0,i)
+		int len = valor.charAt(i);
+		return 0;
+	}
+
+	public int dia(String valor) {
+		return 0;
+	}
+
+	public int anio(String valor) {
+		return 0;
+	}
+
+}

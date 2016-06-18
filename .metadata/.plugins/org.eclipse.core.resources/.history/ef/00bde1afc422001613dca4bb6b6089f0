@@ -1,0 +1,31 @@
+package implementacion;
+
+import tda.ABBTDATurnos;
+
+public class ABBTurnos implements ABBTDATurnos {
+
+	public void inicializar(){
+		
+	}
+	public void agregar(String paciente, String turno){
+		
+	}
+	public void eliminar(String paciente){
+		
+	}
+	public String paciente(){
+		
+	}
+	public String turno(){
+		
+	}
+	public ABBTDATurnos hijoIzquierdo(){
+		
+	}
+	public ABBTDATurnos hijoDerecho(){
+		
+	}
+	public boolean arbolVacio(){
+		
+	}
+}

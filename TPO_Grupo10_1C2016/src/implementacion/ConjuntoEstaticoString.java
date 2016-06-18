@@ -1,0 +1,41 @@
+package implementacion;
+
+import tda.TDAConjunto;
+
+public class ConjuntoEstaticoString implements TDAConjunto {
+
+	String [] a ;
+	int cant ;
+	
+	public void inicializar() {
+		a = new String [100];
+		cant = 0;
+	}
+	public void agregar(String valor) {
+		if (!this.pertenece(valor))	{
+			a[cant] = valor;
+			cant ++;
+		}
+	}
+	public void sacar(String valor) {
+		int i = 0;
+		while (i < cant && a[i]!= valor)
+			i ++;
+		if (i < cant ){
+			a[i] = a[ cant -1];
+			cant --;
+		}
+	}
+	public String elegir() {
+		return a[cant - 1];
+	}
+	public boolean pertenece(String valor) {
+		int i = 0;
+		while (i < cant && a[i]!= valor)
+			i ++;
+		return ( i < cant );
+	}
+	public boolean conjuntoVacio() {
+		return cant == 0;
+	}
+}

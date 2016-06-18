@@ -1,0 +1,58 @@
+package implementacion;
+
+import tda.IAgenda;
+import tda.TDACola;
+import tda.TDAConjunto;
+
+public class AgendaDinamica implements IAgenda {
+	
+	NodoABB raiz ;
+	TDAConjunto medicos = new TDAConjunto();
+
+	public void inicializar(){
+		raiz = null ;
+	}
+	public void agregar(String medico, String fecha, String paciente, String turno){
+		if (raiz == null) {
+			raiz = new NodoABB() ;
+			raiz.paciente = paciente;
+			
+			raiz.hijoI = new ABB();
+			raiz.hijoI.InicializarArbol();
+			raiz.hijoD = new ABB();
+			raiz.hijoD.InicializarArbol();
+			}
+			else if (raiz.info > x)
+				raiz.hijoIzq.AgregarElem(x);
+			else if (raiz.info < x)
+				raiz.hijoDer.AgregarElem(x);
+		}
+	}
+	public void eliminar(String medico){
+		
+	}
+	public void eliminarFecha(String medico, String fecha){
+		
+	}
+	public void eliminarTurno(String medico, String fecha, String paciente){
+		
+	}
+	public TDAConjunto obtenerMedicos(){
+		
+	}
+	public TDACola obtenerFechas(){
+		
+	}
+	public TDACola obtenerFechasMedico(String medico){
+		
+	}
+	public String[][] obtenerTurnosFecha(String fecha){
+		
+	}
+	public String[][] obtenerTurnosMedico(String medico){
+		
+	}
+	public String[][] obtenerTurnosMedicoEnFecha(String medico, String fecha){
+		
+	}
+}

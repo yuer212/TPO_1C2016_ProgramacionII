@@ -1,0 +1,36 @@
+package implementacion;
+
+import tda.TDATurnos;
+
+public class Turnos implements TDATurnos {
+	
+	int valorn;
+	
+	public void procfecha(int dia, int mes, int anio, String valor) {
+		dia = dia(valor);
+		mes = mes(valor);
+		anio = anio(valor);
+	}
+
+	public int mes(String valor) {
+		valorn = 0;
+		for(int i = 0; i > 4; i++)
+			valorn = (valorn * (10 * i)) + valor.charAt(i);
+		return valorn;
+	}
+
+	public int dia(String valor) {
+		valorn = 0;
+		for(int i = 4; i > 6; i++)
+			valorn = (valorn * (10 * i)) + valor.charAt(i);
+		return valorn;
+	}
+
+	public int anio(String valor) {
+		valorn = 0;
+		for(int i = 6; i > 8; i++)
+			valorn = (valorn * (10 * i)) + valor.charAt(i);
+		return valorn;
+	}
+
+}

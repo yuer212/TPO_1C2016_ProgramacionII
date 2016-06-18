@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package implementacion;
+
+import tda.TDATurnos;
+
+/**
+ * @author pabram
+ *
+ */
+public class Turnos implements TDATurnos {
+
+	/* (non-Javadoc)
+	 * @see tda.TDATurnos#mes(java.lang.String)
+	 */
+	@Override
+	public int mes(String valor) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	/* (non-Javadoc)
+	 * @see tda.TDATurnos#dia(java.lang.String)
+	 */
+	@Override
+	public int dia(String valor) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	/* (non-Javadoc)
+	 * @see tda.TDATurnos#anio(java.lang.String)
+	 */
+	@Override
+	public int anio(String valor) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
